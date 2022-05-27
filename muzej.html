@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<meta name="description" content="Sajt posvecen najpoznatijem srpskom naucniku Nikoli Tesli. Muzej Nikola Tesla, sa istorijom dugom 67 godina.">
+	<meta name="author" content="Stefan Rusic">
+    <meta name="keywords" content="Nikola Tesla, Tesla, muzej, izumi, naucnik, naizmenicna struja, generator">
+	<link rel="icon" href="favicon.ico"/>
+	<title>Nikola Tesla - Muzej</title>
+	<script src="https://maps.googleapis.com/maps/api/js"></script>
+	<script>
+      function initialize() {
+        var mapCanvas = document.getElementById('map');
+        var mapOptions = {
+          center: new google.maps.LatLng(44.8051128, 20.47083079999993),
+          zoom: 17,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(mapCanvas, mapOptions)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148023898-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148023898-1');
+</script>
+</head>
+<body>
+	<div class="div1">
+		<div id="divv2" class="div2">
+			<img id="top" src="slike/bannertop.jpg" alt="Nikola Tesla">
+			<ul id="ul1">
+				<li>&nbsp;</li>
+				<li><a href="index.html">Nikola Tesla</a>
+				</li>
+				<li><a href="biografija.html">Biografija</a>
+				</li>
+				<li><a href="#">Muzej</a>
+				</li>
+				<li><a href="izumi.html">Izumi</a>
+				</li>
+				<li><a href="forma.html">Forma</a>
+				</li>
+			</ul>
+			<div id="divv2list" class="div2list">
+				<select name="form" onchange="location = this.options[this.selectedIndex].value;">
+					<option value="#">Meni</option>
+					<option value="index.html">Nikola Tesla</option>
+					<option value="biografija.html">Biografija</option>
+					<option value="#">Muzej</option>
+					<option value="izumi.html">Izumi</option>
+					<option value="forma.html">Forma</option>
+				</select>
+			</div>
+		</div>
+		<div class="div3">
+			<div id="main12" class="div5">
+				<img id="slmuzej" src="slike/teslin-muzej2.jpg" alt="Nikola Tesla Muzej">
+				<p><b>Muzej Nikole Tesle</b> smešten je u centru Beograda, u rezidencijalnoj vili izgradjenoj 1929. Godine, po projektu znamenitog srpskog arhitekte Dragiše Brašovana. Zgrada je imala razne namene, sve do 5. decembra 1952. godine, kada je odlukom vlade FNR Jugoslavije osnovan Muzej Nikole Tesle. Muzejska gradja stigla je u Beograd prema odluci američkih sudskih vlasti, pošto je za jedinog Teslinog naslednika proglašen njegov nećak, Sava Kosanović. Po Teslinoj želji, gospodin Sava Kosanović je dokumentaciju i lične Tesline predmete preneo u Beograd 1951. godine. Muzej je jedinstvena institucija nauke i kulture u Srbiji, kao i u svetu. Jedini je muzej koji čuva originalnu i ličnu zaostavštinu Nikole Tesle.
+					<br>
+					<br> <b>Poseduje izuzetno vredne kolekcije:</b>
+				</p>
+				<ul>
+					<li>preko 160.000 originalnih dokumenata;</li>
+					<li>preko 2000 knjiga i časopisa;</li>
+					<li>preko 1200 istorijsko-tehničkih eksponata;</li>
+					<li>preko 1500 fotografija i staklenih fotoploča originalnih tehničkih predmeta, instrumenata i uredjaja;</li>
+					<li>preko 1000 planova i crteža.</li>
+				</ul>
+				<p>Kao institucija u kojoj se nalazi najveća svetska zbirka dokumenata o Teslinom životu i radu, Muzej Nikole Tesle ima značajnu ulogu u pružanju informacija istraživačima u oblasti istorije nauke, pronalazaštva, patentnih prava i o projektima nastalim iz pokreta za očuvanje životne sredine i istraživanja takozvanih čistih izvora energije. Posebna uloga Muzeja je u organizovanju, podsticanju i promovisanju istraživanja u oblasti istorije nauke, kako bi se jasnije sagledao Teslin doprinos razvoju nauke i tehnologije krajem 19. i početkom 20. veka.</p>
+			</div>
+			<div id="hid1" class="div4">
+				<h2>Mapa muzeja</h2>
+				<div id="image">
+					<img src="slike/mmap.jpg" alt="Nikola Tesla Muzej Mapa">
+				</div>
+				<div id="hover">
+					<ol>
+						<li id="li2">Tesla, čovek i stvaralac</li>
+						<li id="li2">Lični predmeti, prepiska</li>
+						<li id="li2">Urna s posmrtnim pepelom</li>
+						<li id="li2">Bajka o elektricitetu</li>
+						<li id="li2">Polifazni sistem i njegova primena</li>
+						<li id="li2">Teslin transformator i radioveze</li>
+						<li id="li2">Teledirigovanje</li>
+					</ol>
+				</div>
+			</div>
+			<div id="hid2" class="div4">
+				<div id="map"></div>
+			</div>
+			<div>...........................................................................................</div>
+		</div>
+	</div>
+</body>
+</html>

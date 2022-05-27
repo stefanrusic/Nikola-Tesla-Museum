@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<meta name="description" content="Sajt posvecen najpoznatijem srpskom naucniku Nikoli Tesli. Muzej Nikola Tesla, sa istorijom dugom 67 godina.">
+    <meta name="keywords" content="Nikola Tesla, Tesla, muzej, izumi, naucnik, naizmenicna struja, generator">
+	<meta name="author" content="Stefan Rusic">
+	<link rel="icon" href="favicon.ico" />
+	<title>Nikola Tesla - Forma</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148023898-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148023898-1');
+</script>
+</head>
+<body>
+	<div class="div1">
+		<div id="divv2" class="div2">
+			<img id="top" src="slike/bannertop.jpg" alt="Nikola Tesla">
+			<ul id="ul1">
+				<li>&nbsp;</li>
+				<li><a href="index.html">Nikola Tesla</a>
+				</li>
+				<li><a href="biografija.html">Biografija</a>
+				</li>
+				<li><a href="muzej.html">Muzej</a>
+				</li>
+				<li><a href="izumi.html">Izumi</a>
+				</li>
+				<li><a href="#">Forma</a>
+				</li>
+			</ul>
+			<div id="divv2list" class="div2list">
+				<select name="form" onchange="location = this.options[this.selectedIndex].value;">
+					<option value="#">Meni</option>
+					<option value="index.html">Nikola Tesla</option>
+					<option value="biografija.html">Biografija</option>
+					<option value="muzej.html">Muzej</option>
+					<option value="izumi.html">Izumi</option>
+					<option value="forma.html">Forma</option>
+				</select>
+			</div>
+		</div>
+		<div class="div3">
+			<div class="div7">
+				<br>
+				<div class="content">
+					<form name="primerPodatak" action="mailto:stefanrusic32@gmail.com" onSubmit="return Provera(primerPodatak)" method="post">
+						<br>
+						<br>
+						<h3>Pišite nam vaše utiske o Muzeju, kao i mišljenje o našoj internet prezentaciji.</h3>
+						<br>
+						<br>
+						<label>Ime:</label>
+						<input type="text" placeholder="Unesi ime" class="text">
+						<br>
+						<br>
+						<label>Prezime:</label>
+						<input type="text" placeholder="Unesi prezime" class="text">
+						<br>
+						<br>
+						<label>E-mail:<span class="zvezdica">*</span></label>
+						<input type="text" id="email" placeholder="primer@gmail.com" class="text">
+						<br>
+						<br>
+						<br>
+                        <label>Komentar:</label>
+						<textarea  name="Komentar" cols="40" rows="5" style="  left: 10%;"></textarea><br>
+						<br>
+						<br>
+						<button type="submit" value="Pošalji"  onclick="return Poruka(primerPodatak)">Pošalji</button>
+					</form>
+					<span class="zvezdica">*</span>Obavezno uneti
+					<script>
+                    function Provera(Podatak)
+                   {
+                    if(Podatak.email.value=="")
+                       {
+                    alert("Unesite E-mail!");
+                  return false;
+                   }
+	              return true;
+                       }
+                 </script>
+				</div>
+			</div>
+			<div>...........................................................................................</div>
+		</div>
+	</div>
+</body>
+</html>
