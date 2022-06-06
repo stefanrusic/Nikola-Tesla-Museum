@@ -1,6 +1,6 @@
 # Nikola-Tesla-Museum
 This site is dedicated to Nikola Tesla Museum in Belgrade.
-It's made using HTML/CSS and a little bit of JavaScript
+It's made using HTML and CSS
 
 # Screenshots
 Here are some of the screenshots of the website.
