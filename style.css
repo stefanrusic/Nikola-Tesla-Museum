@@ -168,12 +168,18 @@ body {
 	border: 1px solid black;
 	z-index: 20;
 }
-#map {
-        width: 320px;
-        height: 365px;
-		padding: 5px;
-		border-radius: 15px;
+#map { 
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
       }
+#map img {
+	flex-shrink: 0;
+	min-width: 100%;
+	min-height: 100%
+}
+	  
 #image {
 	padding-right: 15%;
 	width: 85%
